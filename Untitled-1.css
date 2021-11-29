@@ -1,0 +1,426 @@
+@charset "UTF-8";
+* {
+    outline: none;
+}
+
+/*版面*/
+body,html {
+    margin: 0;
+    background: #86bbb1;
+    font-family: "HanyiSentyBubbleTea";
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #5394dd;
+    cursor: default;
+}
+.resume {
+    margin: 10px 0px -14px 0px;
+    position: relative;
+    display: flex;
+    border-bottom: none;
+}
+.tableb{
+    background: #eef0f1;
+    margin:10px;
+}
+.resume .base{
+    box-sizing: border-box;
+    float: left;
+    width: 265px;
+    padding: 10px 15px;
+    background: rgba(176, 201, 235, 0.6);
+}
+.resume .base .profile {
+    background: #aed3e9;
+    position: relative;
+    z-index: 2;
+}
+.resume .base .profile .info {
+    text-align: center;
+    color: #a0a7eb;
+}
+.resume .base .profile .info .name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bolder;
+}
+td{
+    vertical-align: top;
+  }
+.border{
+    border-bottom-style:dashed;border-color:#cfb189;
+    padding:8px;
+    border-width:3px;
+}
+/*左半邊自我介紹*/
+.base h1{
+    font-size: 25px;
+}
+.word{
+    color: rgba(4, 110, 110, 0.904);
+    font-size:20px ;
+    margin-top: -10px;
+}
+.p1{
+    position: relative;
+    margin-top: 0px;
+    z-index: 2;
+}
+.p1 img{
+    margin-left: 15px;
+    width: 200px;
+    border-radius: 50%;
+}
+.pic-aft{
+    position: absolute; 
+    left: 0px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.p1:hover .pic-aft{
+    opacity: 1;
+}
+.p2 h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: -5px;
+}
+.p2 h1 span{
+    font-size: 18px;
+}
+.pp2{
+    display: flex;
+}
+.pp2 p{
+    font-size: 20.5px;
+    margin-top: -10px;
+}
+.pp2 .tleft{
+    width: 120px;
+    font-weight: bold;
+}
+/*右半自我介紹*/
+.p3{
+    width: 480px;
+    padding-left: 40px;
+}
+.pp3{
+    margin-left: -5px;
+}
+.pp3 h1{
+    font-size: 50px;
+    margin: 0px;
+}
+.pp3 p{
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin: 0px;
+    position: relative;
+    left: 35px;
+    transition: .3s;
+    z-index: 1;
+    width: 350px;
+}
+.pp3 p:hover{
+    letter-spacing: 3px;
+}
+.pp3 img{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 480px;
+    opacity: 0;
+}
+.pp3 p:hover +img{
+    opacity: 0.75;
+}
+.p4 img{
+    width: 360px;
+    box-shadow: 5px 5px 10px rgb(66, 59, 59);
+    border-radius: 3px;
+}
+.pp4{
+    position:absolute;
+    left: 280px;
+    top: 50px;
+    width: 2px;
+    z-index: 3;
+    transition: 0.5s;
+}
+.pp4:hover{
+    transform: scale(1.2);
+}
+.ppp4{
+    position:absolute;
+    left: 320px;
+    top: 50px;
+    width: 2px;
+    z-index: 2;
+    transition: 0.5s;
+}
+.ppp4:hover{
+    z-index: 3;
+    transform: scale(1.2);
+}
+/*學歷和工作經驗*/
+.b5 table{
+    margin-bottom: 5px;
+    height: 60px;
+  }
+.b5 h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+.b6 table{
+    margin-bottom: 5px;
+    height: 60px;
+  }
+.b6 h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+.bg {
+    border-collapse: collapse;
+    width: 420px;
+    height: 55px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    transition: .3s;
+  }
+.bg td{
+    vertical-align: text-top;
+    padding-top: 4px;
+    padding-left: 13px;
+  }
+  .bg:hover{
+    border-radius: 10px;
+    background-color: #78d3b8;
+  }
+  .th{
+    width: 120px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+  .tp{
+    font-size: 22px;
+  }
+  .tp .small{
+    font-size: 15px;
+  }
+/*pie chart==================================*/
+.b3 p{
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+.b3 h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.b3 h1 span{
+    font-size: 18px;
+}
+.b3 td{
+    padding:60px ;
+}
+.b-skills
+{
+	text-align: center;
+}
+.b-skills:last-child { margin-bottom: -30px; }
+.skill-item
+{
+	position: relative;
+	max-width: 130px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: rgb(224, 178, 178);
+}
+.chart-container
+{
+	position: relative;
+	width: 120%;
+	padding-top: 120%;
+}
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120% !important;
+	height: 120% !important;
+}
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+.skill-item .percent
+{
+	position: relative;
+    left: 10px;
+    top: 10px;
+	font-size: 40px;
+	font-weight: 700;
+    letter-spacing: 2px;
+	z-index: 2;
+}
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+    padding-top: 5px;
+}
+/*skill bar===============================*/
+.b4{
+    margin:20px;
+}
+.b4 h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.b4 h1 span{
+    font-size: 18px;
+}
+.b-bar{
+    letter-spacing: 2px;
+}
+.b-bar p{
+    font-size: 20px;
+}
+.progress{
+    width: 100%;
+    height: 20px; 
+    background-color: #D0D0D0;
+    border-radius: 10px;
+}
+.progress .progress-bar{
+    height: 100%;
+    background-color: #ddfff4;
+    border-radius: 10px;
+    position: relative;
+    transition: all 2s;
+}
+.progress-bar span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(110, 106, 106);
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+/*學習經歷*/
+.wwork{
+    margin: 20px;
+}
+.work h1{
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+.demo h3{
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: cadetblue;
+}
+.demo p{
+    font-size: 18px;
+    color: rgb(20, 43, 44);
+}
+.demo p:hover{
+    letter-spacing: 3px;
+}
+.mysql h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: cadetblue;
+}
+.mmysql{
+    margin: 20px;
+}
+.mysql p{
+    font-size: 18px;
+    color: rgb(20, 43, 44);
+}
+.mysql p:hover{
+    letter-spacing: 3px;
+}
+.sq img{
+    width: 300px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 3px;
+}
+.button {
+    background-color: #fffbc5;
+    border-radius:10px;
+    color: rgb(100, 94, 94);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+/*學習經歷*/
+.ffin{
+    margin: 20px;
+}
+.fin h1{
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+.fffin h3{
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: cadetblue;
+}
+.fffin p{
+    font-size: 18px;
+    color: rgb(20, 43, 44);
+}
+.fffin p:hover{
+    letter-spacing: 3px;
+}
+/*footer===============================*/
+.foot{
+    margin-left:10px ;
+    margin-top: -10px;
+    width: 1245px;
+    height: 130px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #9FAFC5;
+    padding-top: 20px;
+}
+.foot p{
+    font-size:17px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.t1{
+
+    padding-left: 520px;
+    padding-top: 18px;
+}
+.t1 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top:-50px;
+}
+
+
